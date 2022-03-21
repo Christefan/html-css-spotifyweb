@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+.contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+nav{
+    background-color: aqua;
+    width: 13%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.logo{
+    background-color: chartreuse;
+    height: 40px;
+}
+.lista-1{
+    background-color: blue;
+}
+.lista-2{
+    background-color: coral;
+}
+.download{
+    color: white;
+    background-color: black;
+    display: flex;
+    font-size: 9px;
+    align-items: center;
+    padding: 8px;
+}
+
+.download img{
+    margin-right: 5px;
+    color: white;
+    width: 13px;
+    
+}
+.utente{
+    display: flex;
+    color: wheat;
+    background-color: rgb(255, 0, 0);
+    /* justify-self: flex-end; */
+    padding: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.utente img{
+    margin-right: 5px;
+    color: white;
+    width: 20px;
+    border-radius: 50% ;
+}
+main{
+    background-color: brown;
+    width: 87%;
+    height: 90vh;
+    display: flex;
+}
+.upgrade{
+    height: 8vh;
+    width: 100%;
+    background-color: darkgreen;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(31, 32, 32);
+}
+.footer-left {
+    display: flex;
+    margin-left: 0.3em;
+    align-items: center;
+}
+.footer-left img{
+    width: 40px;
+}
+.testo-left{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin: 15px;
+}
+.footer-left i{
+    margin: 10px;
+}
+
+.footer-center {
+    /* background-color: rgb(31, 32, 32); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.center-top{
+    display: flex;
+    align-items: center;
+}
+.center-top i{
+    margin: 0 9px;
+}
+.center-top span{
+    font-size: 27px;
+}
+.center-bottom{
+
+    margin:14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(31, 32, 32); */
+}
+.bordo{
+    /* border: 2px solid #ff0000; */
+    height: 4px;
+    width: 29vw;
+    border-radius: 1.5px;
+    background-color: #5a5a5a;
+    margin: 0 7px;
+}
+
+.footer-right {
+    display: flex;
+    margin: 0 5px;
+}
+.footer-right i{
+    margin:0 5px ;
+}
+.bordo-2{
+    border: 2px solid #ff0000;
+    width: 150px;
+}
