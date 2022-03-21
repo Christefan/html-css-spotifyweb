@@ -3,21 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    background-color: antiquewhite;
-}
 .contenitore{
+    width: 100%;
+    min-height: 0;
+    max-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
+}
+/* Test per ridurre il numero di righe*/
+/* .cont-flex-center{
+    display: flex;
+    align-items: center;
+} */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li {
+    color: gray;
+     list-style-type: none;
+}
+h4{
+    color: white;
 }
 img{
     width: 100%;
 }
 nav{
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     width: 13%;
     height: 90vh;
     display: flex;
@@ -27,34 +40,65 @@ nav{
 }
 
 .logo{
-    background-color: chartreuse;
-    height: 40px;
+    /* background-color: chartreuse; */
+    position: relative;
+    padding: 10px;
+    display: block;
+}
+.logo img{
+    width: 120px;
 }
 .lista-1{
-    background-color: blue;
+    padding: 3px;
+    /* background-color: blue; */
+}
+.lista-1 ul li{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 9px;
+}
+.lista-1 span{
+    font-size: 13.5px;
+    margin: 0 3.5px;
+}
+.lista-1 img{
+    width:23px;
 }
 .lista-2{
-    background-color: coral;
+    
+    /* background-color: coral; */
+}
+#crea i{
+  font-size: 50px;
+  margin-right: 5px;
+}
+#crea {
+   display: flex;
+   align-items: center;
+}
+.lista-2 li{
+    margin: 14px;
 }
 .download{
     color: white;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
-    font-size: 9px;
+    font-size: 13px;
     align-items: center;
-    padding: 8px;
+    padding: 7px;
 }
 
 .download img{
-    margin-right: 5px;
+    margin-right: 11px;
     color: white;
-    width: 13px;
+    width: 18px;
     
 }
 .utente{
     display: flex;
     color: wheat;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     /* justify-self: flex-end; */
     padding: 8px;
     justify-content: flex-start;
@@ -62,20 +106,47 @@ nav{
 }
 .utente img{
     margin-right: 5px;
-    color: white;
+    background-color: rgb(66, 66, 66);
     width: 20px;
     border-radius: 50% ;
 }
 main{
-    background-color: brown;
+    background-color: rgb(70, 67, 67);
     width: 87%;
     height: 90vh;
-    display: flex;
+    /* display: flex; */
+    flex-wrap: wrap;
 }
 .upgrade{
     height: 8vh;
     width: 100%;
-    background-color: darkgreen;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: flex-end;
+}
+.upgrade div{
+    margin-right: 33px;
+    display: flex;
+    align-items: center;
+}
+.upgrade a{
+    border-radius: 20px; 
+    border:2px solid white;  
+    padding-left:30px; 
+    padding-right:30px; 
+    padding-top:10px; 
+    padding-bottom:10px; 
+    font-size:0.9em;
+}
+.upgrade a:hover {
+    transform: scale(1.3) ;
+}
+.main-cont-top{
+    display: flex;
+    justify-content: center;
+}
+.main-cont-top a{
+    margin: 10px;
 }
 footer {
     display: flex;
@@ -121,10 +192,9 @@ footer {
     margin: 0 9px;
 }
 .center-top span{
-    font-size: 27px;
+    font-size: 32px;
 }
 .center-bottom{
-
     margin:14px 0;
     display: flex;
     justify-content: space-between;
@@ -133,21 +203,53 @@ footer {
 }
 .bordo{
     /* border: 2px solid #ff0000; */
-    height: 4px;
-    width: 29vw;
-    border-radius: 1.5px;
+    position: relative;
+    height: 7px;
+    width: 25vw;
+    border-radius: 6.5px;
     background-color: #5a5a5a;
-    margin: 0 7px;
+    margin: 0 19px;
+}
+.bordo div{
+    border-radius: 6.5px;
+    background-color: #c2c2c2;
+    width: 8vw;
+    height: 6.5px;
+}
+.bordo div:hover{
+    background-color: #0dad0d;
 }
 
 .footer-right {
     display: flex;
+    align-items: center;
     margin: 0 5px;
 }
 .footer-right i{
-    margin:0 5px ;
+    margin:0 9.5px ;
 }
 .bordo-2{
-    border: 2px solid #ff0000;
-    width: 150px;
+    position: relative;
+    height: 5px;
+    width: 12vw;
+    border-radius: 6.5px;
+    background-color: #5a5a5a;
+    margin: 0 7px;
+}
+.bordo-2 div{
+    border-radius: 6.5px;
+    display: flex;
+    background-color: #c2c2c2;
+    width: 2vw;
+    height: 4.5px;
+}
+.bordo-2 div:hover{
+    background-color: #0dad0d;
+}
+.bordo-3{
+    height: 2px;
+    width: 11.5vw;
+    border-radius: 1.5px;
+    background-color: #5a5a5a;
+    margin: 0 7px;
 }
