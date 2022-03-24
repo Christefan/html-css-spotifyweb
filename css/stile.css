@@ -49,11 +49,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-/* Test per ridurre il numero di righe*/
-/* .cont-flex-center{
-    display: flex;
-    align-items: center;
-} */
 
 .clearfix::after{
     content: "";
@@ -63,8 +58,9 @@ footer {
 
 a{
     text-decoration: none;
-    color: white;
+    color: gray;
 }
+
 li {
      color: gray;
      list-style-type: none;
@@ -75,6 +71,12 @@ h4{
 img{
     width: 100%;
 }
+
+/* SIDEBAR */
+.sidebar-top a:hover{
+    color: white;
+}
+
 .logo{
     /* background-color: chartreuse; */
     position: relative;
@@ -103,20 +105,20 @@ img{
 .lista-1 img{
     width:17%;
 }
-.lista-2{
-    flex-grow: 1;
+.lista-2  li:nth-child(2):hover  a {
+    color: white;
+
     /* background-color: coral; */
 }
-#crea i{
-  font-size: 50px;
-  margin-right: 5px;
+#icon-plus {
+    font-size: 1.5em;
+    padding: .4em .5em;
+    margin-right: .3em;
+    background-color: #a5a5a5;
 }
-#crea {
-   display: flex;
-   align-items: center;
-}
+
 .lista-2 li{
-    margin: 14px;
+    margin: 20px 14px;
 }
 .download{
     color: white;
@@ -133,6 +135,13 @@ img{
     width: 18px;
     
 }
+.bordo-3{
+    height: 2px;
+    width: 75%;
+    border-radius: 1.5px;
+    background-color: #5a5a5a;
+    margin: 0 7px;
+}
 .utente{
     display: flex;
     color: white;
@@ -148,6 +157,12 @@ img{
     width: 20px;
     border-radius: 50% ;
 }
+
+/* /SIDEBAR */
+
+
+/* MAIN */
+
 .upgrade{
     position: fixed;
     z-index: 1; 
@@ -155,15 +170,19 @@ img{
     height: 80px;
     background-color: rgba(8, 11, 18, 0.5);
     text-align: right;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .upgrade div{
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
     margin-right: 40px;
 }
 .upgrade a{
     border-radius: 20px; 
     border:2px solid white;  
+    color: white;
     padding:10px 30px;
     font-size:0.9em;
 }
@@ -180,27 +199,33 @@ img{
     font-size: 13px;
 }
 
+.main-cont-top  a:hover{
+    color: white;
+}
+
+.main-cont-top a:first-child{
+    border-bottom: #0dad0d 3px solid;
+    padding-bottom: 5px;
+}
+
 .cont-playlist{
     height: calc(100% - 80px);
     margin-top: 90px;
 }
 .album-riga {
-    /* width: 100%; */
     margin: 20px;
     display: flow-root;
 }
 .album-testo{
     padding: 13px 5px;
 }
-.layover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color:   rgb(0, 0, 0, 0.2);
+.album-testo h2{
+    color: white;
 }
+.album-testo p{
+    color: grey;
+}
+
 .layover i{
     position: absolute;
     top: 50%;
@@ -208,6 +233,8 @@ img{
     transform: translate(-50%, -75%);
     font-size: 5rem;
     color: white;
+    z-index: 1;
+    display: none;
 }
 .album {
     float: left;
@@ -236,12 +263,20 @@ img{
     color: #b3b3b3;
 }
 
-.album:hover .layover{
+.album:hover .layover i {
     display: block;
+    
    }
-.prova.rad img{
+   .album:hover img{
+       opacity: 0.7;
+   }
+
+.album-riga.rad img{
     border-radius: 50%;
 }
+/* /MAIN */
+
+/* FOOTER */
 
 .footer-left {
     display: flex;
@@ -256,6 +291,12 @@ img{
     font-size: 11px;
     margin: 15px;
 }
+
+.testo-left a:hover{
+    color: white;
+}
+
+
 .footer-left-aws i{
     margin-left:  20px;
 }
@@ -305,16 +346,14 @@ img{
     height: 7px;
 }
 .bordo-p{
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color:white;
-        display: none;
-        
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:white;
+    display: none;
 }
 .bordo:hover .bordo-interno{
     background-color: #0dad0d;
-    
 }
 .bordo:hover .bordo-p{
     display: block;
@@ -335,29 +374,42 @@ img{
     background-color: #5a5a5a;
     margin: 0 7px;
 }
-.bordo-2 div{
+
+.bordo-interno2{
     border-radius: 6.5px;
-    /* display: flex; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #c2c2c2;
     width: 2vw;
     height: 5px;
 }
-.bordo-2:hover div{
+.bordo-p2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:white;
+    display: none;
+}
+.bordo-2:hover .bordo-interno2{
     background-color: #0dad0d;
 }
-.bordo-3{
-    height: 2px;
-    width: 75%;
-    border-radius: 1.5px;
-    background-color: #5a5a5a;
-    margin: 0 7px;
+.bordo-2:hover .bordo-p2{
+    display: block;
 }
+
+/* /FOOTER */
+
 
 /*------------------------------------------------------------------------------------------------*/
 
 /* media query s */
 @media screen and (max-width:700px ) and (min-width: 601px){
 
+    .main-cont-top a{
+        display: inline-block;
+        text-align: center;
+    }
     .album {
         width: calc((100% - 30px) / 2);
     }
